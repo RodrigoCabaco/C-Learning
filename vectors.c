@@ -4,14 +4,18 @@
 
 
 
-char* add_to_array (char* initial [], char* to_add []){
-    
-    return "";
+void add_to_array (char* initial [], char* to_add){
+    char* i [0];
+    // i[((int)(sizeof(initial)/sizeof(initial[0])))] = to_add;
+    char hi [] = "Hi"; 
+    *initial[1] = hi;
 }
 
 int main(){
     
     char* f [] = {"Rodrigo", "Margarida"};
+    char* add;
+    add_to_array(f, add);
     printf("Size of f: %i", sizeof(f)/sizeof(f[0]));
     printf("\nPrinting values...\n");
     int size = sizeof(f)/sizeof(f[0]);
